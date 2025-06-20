@@ -1,7 +1,7 @@
 ---
-import ArtPlums from "@/components/ArtPlums.astro";
+import ArtPlums from "@/components/ArtPlums-2.astro";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
-import '../globals.css'
+import "../globals.css";
 import CV from "@cv";
 
 interface Props {
@@ -20,7 +20,7 @@ const { image, summary, url, theme } = CV.basics;
     <title>{title}</title>
     <meta name="description" content={summary} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" href="/avatar.png" />
+    <link rel="icon" href="/Frame.svg" />
     <link rel="preload" as="image" href={image} />
     <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
@@ -72,7 +72,7 @@ const { image, summary, url, theme } = CV.basics;
       h2,
       h3,
       h4 {
-        @apply text-skin-base font-sans;
+        @apply font-sans text-skin-base;
         margin: 0;
       }
 

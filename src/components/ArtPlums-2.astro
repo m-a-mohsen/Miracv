@@ -1,0 +1,21 @@
+---
+// Dot background pattern component
+---
+
+<div
+  class="pointer-events-none fixed bottom-0 left-0 right-0 top-0 print:hidden"
+>
+  <!-- Dot pattern background -->
+  <div
+    class="absolute inset-0"
+    style="background-color: rgb(var(--color-fill)); background-size: 20px 20px; background-image: radial-gradient(rgb(var(--muted)) 1px, transparent 1px);"
+  >
+  </div>
+
+  <!-- Radial gradient mask for faded look -->
+  <div
+    class="pointer-events-none absolute inset-0"
+    style="background-color: rgb(var(--color-fill)); mask-image: radial-gradient(ellipse at center, transparent 20%, black); -webkit-mask-image: radial-gradient(ellipse at center, transparent 20%, black);"
+  >
+  </div>
+</div>
